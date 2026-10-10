@@ -19,3 +19,7 @@ vim.keymap.set({ "i", "v" }, "jk", "<Esc>", {
     desc = "Exit to normal mode",
 })
 
+-- command pallate open
+vim.keymap.set("n", "l;", ":", {
+  desc = "Open command line",
+})
