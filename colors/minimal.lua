@@ -9,8 +9,8 @@ vim.g.colors_name = "custom_dark"
 
 -- Define your color palette variables
 local palette = {
-    bg        = "#21252b", -- Dark charcoal background
-    fg        = "#abb2bf", -- Main text color
+    bg        = "#1a1b26", -- Dark charcoal background
+    fg        = "#c0caf5", -- Main text color
     comment   = "#5c6370", -- Muted gray for comments
     red       = "#e06c75", -- Errors, constants, delete
     green     = "#e06c75", -- Strings
