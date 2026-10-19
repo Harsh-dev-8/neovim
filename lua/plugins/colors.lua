@@ -1,21 +1,18 @@
-local function enable_transparency()
-    vim.api.nvim_set_hl(0,"Normal", { bg = "none" })
-end
+ -- lua/plugins/colors.lua
 return {
-    {
-	"folke/tokyonight.nvim",
-	config = function()
-	    vim.cmd.colorscheme "tokyonight"
-	    enable_transparency()
-	end
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    lazy = false,
+    opts = {
+      contrast = "hard",
+      palette_overrides = {
+        dark0_hard = "#000000",
+      },
     },
-    {
-	"nvim-lualine/lualine.nvim",
-	dependencies = {
-	    "nvim-tree/nvim-web-devicons",
-	},
-	opts = {
-	    theme = 'auto',
-	}
-    },
-}
+    config = function(_, opts)
+      require("gruvbox").setup(opts)
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
+}       

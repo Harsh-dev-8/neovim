@@ -20,6 +20,6 @@ vim.keymap.set({ "i", "v" }, "jk", "<Esc>", {
 })
 
 -- command pallate open
-vim.keymap.set("n", "l;", ":", {
+vim.keymap.set("n", ";", ":", {
   desc = "Open command line",
 })
