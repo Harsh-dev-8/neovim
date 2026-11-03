@@ -67,7 +67,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "lua_ls", "clangd", "basedpyright", "html"}
+      ensure_installed = { "lua_ls", "clangd", "basedpyright", "html", "tsc"}
     },
   },
 
@@ -100,7 +100,7 @@ return {
       })
 
       -- Enable servers natively
-      local servers = { "lua_ls", "clangd", "basedpyright", "html"}
+      local servers = { "lua_ls", "clangd", "basedpyright", "html", "tsc"}
       for _, server in ipairs(servers) do
         vim.lsp.enable(server)
       end

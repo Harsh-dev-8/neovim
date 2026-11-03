@@ -1,7 +1,6 @@
 require('config.options')
 require('config.keybinds')
 require('config.lazy')
-require('plugins.colors')
 require('plugins.telescope')
 require('plugins.treesitter')
 require('plugins.harpoon')

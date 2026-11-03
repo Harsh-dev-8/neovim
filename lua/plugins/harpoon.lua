@@ -21,19 +21,19 @@ return {
 	end, { desc = "Harpoon menu" })
 
 	-- Jump to Harpoon files
-	vim.keymap.set("n", "<leader>1", function()
+	vim.keymap.set("n", "<M-j>", function()
 	    harpoon:list():select(1)
 	end)
 
-	vim.keymap.set("n", "<leader>2", function()
+	vim.keymap.set("n", "<M-k>", function()
 	    harpoon:list():select(2)
 	end)
 
-	vim.keymap.set("n", "<leader>3", function()
+	vim.keymap.set("n", "<M-l>", function()
 	    harpoon:list():select(3)
 	end)
 
-	vim.keymap.set("n", "<leader>4", function()
+	vim.keymap.set("n", "<M-;>", function()
 	    harpoon:list():select(4)
 	end)
 

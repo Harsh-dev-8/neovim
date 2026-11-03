@@ -14,3 +14,14 @@ vim.opt.fillchars = {
 }
 -- Option 2: Force block in ALL modes (same look everywhere)
 vim.opt.guicursor = "n-v-c-i-ci-ve:block,r-cr:hor20,o:hor50"
+-- Native inline error messages at the end of the line
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = "●", -- Symbol preceding error message
+    source = "always", -- Show source (e.g. clangd, gcc)
+  },
+  signs = true,
+  underline = true,
+  update_in_insert = true, -- Show errors live while typing!
+  severity_sort = true,
+})

@@ -13,6 +13,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
+    -- Automatically imports themes
+    { import = "plugins.themes" },
     -- Automatically imports all files directly in lua/plugins/
     { import = "plugins" },
     -- REQUIRED: Tell lazy to also look inside lua/plugins/lsp/
