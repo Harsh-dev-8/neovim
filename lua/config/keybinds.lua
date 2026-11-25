@@ -41,3 +41,4 @@ vim.keymap.set("n", "<leader>r", function()
   -- Open a split terminal at the bottom, compile with gcc, and run the binary
   vim.cmd("split | terminal gcc " .. vim.fn.shellescape(file) .. " -o " .. vim.fn.shellescape(basename) .. " && " .. vim.fn.shellescape("./" .. basename))
 end, { desc = "Compile and run C code" })
+
